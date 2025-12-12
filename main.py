@@ -9,6 +9,10 @@ please = 0
 # Use robot.motors() to move
 # Use robot.left_sonar() and robot.right_sonar() to sense obstacles
 
+
+# i thnk a 90º turn is 1.49999999999999
+
+
 def zigzag():
     robot.motors(left=FORWARD, right=FORWARD, seconds=1)
     robot.motors(left=BACKWARD, right=FORWARD, seconds=0.5)
@@ -19,6 +23,7 @@ def zigzag():
         robot.motors(left=BACKWARD, right=FORWARD, seconds=1)
         robot.motors(left=FORWARD, right=FORWARD, seconds=0.5)
 def cross():
+####you prob want to add { global m1 } so the code can acsess the variable
     while robot.left_sonar() > 10 or robot.left_sonar() > 10:
         robot.motors(left=FORWARD, right=FORWARD, seconds=0.5)
         m1 = m1 + 0.5
@@ -44,6 +49,7 @@ def cross():
     m1=0
     robot.motors(left=FORWARD, right=BACKWARD, seconds=1.625)
 def spin():
+####you prob also want to add { global x } here
     robot.motors(left=FORWARD, right=BACKWARD, seconds=2)
     print("Weeeeeeeeeeeee")
     robot.motors(left=FORWARD, right=BACKWARD, seconds=4)
