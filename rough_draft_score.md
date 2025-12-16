@@ -39,3 +39,55 @@ Loops/Recursion (15 points):
 * [ 10 / 10 ] Implements indefinite execusing using at least one while loop OR at least one recursive function call
 * [ 5 / 5 ] There is an option to terminate your indefinite execution
 
+Here's your partner's feedback, which was actually even more useful than mine!
+
+Basic Functionality (15 points):
+Robot can move, and code runs without errors in simulator
+Cross crashes
+Robot does not crash into walls
+Double zigzag crashes it. 
+Control Flow - If/Elif/Else (15 points):
+At least one if/elif/else chain with 3+ branches
+At least one if/else that checks a sonar sensor reading
+Unsure if this is a “final” addition to the code or not
+At least one if/else that checks user input
+User Input (15 points):
+There is an input prompt
+There are at least two possible user responses to that prompt that are handled differently
+Robot behavior changes based on which of those responses the user gave.
+There is ANOTHER input prompt
+There are at least two possible user responses to THAT prompt that are handled differently
+Robot behavior changes based on which of THOSE responses the user gave.
+There is ANOTHER input prompt
+There are at least two possible user responses to THAT prompt that are handled differently
+Robot behavior changes based on which of THOSE responses the user gave.
+The robot doesn't change but something else does
+Functions (10 points):
+A function is defined
+That function is called at least once
+That function has a doc string explaining what it does
+ANOTHER function is defined
+THAT function is called at least once
+THAT function has a doc string explaining what it does
+ANOTHER function is defined
+THAT function is called at least once
+THAT function has a doc string explaining what it does
+Sensors (10 points):
+Read a sonar distance
+Robot behavior changes based on the sonar values from that reading
+Read ANOTHER sonar distance
+Robot behavior changes based on the sonar values from THAT reading
+Hard to tell if the behavior changes because it crashes 
+Read ANOTHER sonar distance
+Robot behavior changes based on the sonar values from THAT reading
+Hard to tell if the behavior changes because it crashes 
+Read ANOTHER sonar distance
+Robot behavior changes based on the sonar values from THAT reading
+Hard to tell if the behavior changes because it crashes 
+Read ANOTHER sonar distance
+Robot behavior changes based on the sonar values from THAT reading
+Hard to tell if the behavior changes because it crashes 
+Loops/Recursion (15 points):
+Implements indefinite execution using at least one while loop OR at least one recursive function call
+There is an option to terminate your indefinite execution
+I do not think this is given as a clear option though
