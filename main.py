@@ -1,6 +1,5 @@
 from simulator import robot, FORWARD, BACKWARD, STOP
 import time
-import turtle
 m1 = 0
 m2 = 0
 global x
@@ -131,15 +130,9 @@ while x == 0:
         print("Bye!!!!!")
         time.sleep(3)
         print("Charge!!!!")
-        robot.motors(left= FORWARD, right= FORWARD, seconds=20)
+        robot.motors(left= FORWARD, right= FORWARD, seconds=5)
         print("Did I escape?")
         x=1
-    elif response =="test":
-        m1 = (robot.left_sonar() + robot.right_sonar())/2
-        robot.motors(left=FORWARD, right=FORWARD, seconds=3)
-        m2 = (robot.left_sonar() + robot.right_sonar())/2
-        m3 = m2 - m1
-        turtle.forward(m3)
     else: 
         print("Opps. Looks like you made a typo. Please try again.")
 
