@@ -12,11 +12,13 @@ please = 0
 
 while x != 1:
     def system_check():
+        print("Left:")
         print(robot.left_sonar())
+        print("Right:")
         print(robot.right_sonar())
 
     def crash_protection():
-        if robot.left_sonar() < 5 or robot.right_sonar() < 5:
+        if robot.left_sonar() < 4 or robot.right_sonar() < 4:
             print("Opps. You made the robot uncomfortable and too close to the wall.")
             robot.motors(left=BACKWARD, right=BACKWARD, seconds=2)
 
@@ -144,15 +146,22 @@ while x != 1:
             robot.motors(left= FORWARD, right= FORWARD, seconds=5)
             print("Did I escape?")
             x=1
-        elif response == "cd":
+        elif response == "stats":
             system_check()
         elif response == "admin":
-            x=2
+            rec = input("Password: ")
+            if rec == "Fluffy09":
+                print("Clear")
+                x=2
+            else:
+                print("Incorrect password.")
         else: 
             print("Opps. Looks like you made a typo. Please try again.")
 
     while x == 2:
         unc = input("Action ")
+        if unc == "stats" or "P":
+            print("Put any intager for seconds.")
         dis = input("Seconds ")
         distance = int(dis)
         if unc == "stats":
